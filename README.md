@@ -6,7 +6,7 @@ Segmentation tool for the delineation and volumetric quantification of the choro
 If you have already installed Docker, you can get the kilianhett/chp_seg:latest image from Docker Hub repository:
 
 ```
-sudo docker pull volbrain/assemblynet:1.0.0
+sudo docker pull kilianhett/chp_seg:latest
 ```
 
 Choroid plexus segmentation software currently only support CPU
