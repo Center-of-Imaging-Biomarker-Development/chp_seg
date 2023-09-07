@@ -28,7 +28,7 @@ To run this Docker image on a CPU, you will need:
 * At least 6GB of RAM
 * GNU/Linux [[supported distributions]](https://docs.docker.com/engine/install/#server), MacOS, or Windows 10/11 with WSL [[supported versions]](https://docs.docker.com/desktop/windows/install/)
 * Docker >= 19.03 
-* SPeSiS Docker image 
+* Chp_seg Docker image 
 * MRI files in nifti format
 
 ## Installation 
@@ -65,7 +65,7 @@ sudo docker run hello-world
 
 #### Installation on Windows 10/11 with WSL
 
-Here are the detailled installation instructions on Windows 10 or 11.
+Here are the detailed installation instructions on Windows 10 or 11.
 
 ##### Check Windows version
 
@@ -112,11 +112,11 @@ sudo apt-get upgrade
 
 This Docker image requires T1-weighted, T2-weighted, or FLAIR images in nifti format (.nii or .nii.gz) as inputs.
 
-To convert your DICOM files into nifti format, you can use [dcm2niix](https://github.com/rordenlab/dcm2niix), a multiplatform and open source software.
+To convert your DICOM files into nifti format, you can use [dcm2niix](https://github.com/rordenlab/dcm2niix), a multiplatform and open-source software.
 
 ## Outputs
 
-For each processed image, the following files will be produced and stored separately in folder named *filename* (where *filename* is replaced by the original filename):
+For each processed image, the following files will be produced and stored separately in a folder named *filename* (where *filename* is replaced by the original filename):
 
 * *filename*.nii.gz: Native image corrected for N4 inhomogeneity 
 * *filename*_chp_mask.nii.gz: Segmentation maps of the choroid plexus structures
@@ -128,7 +128,7 @@ The Docker image has the following arguments:
 [--sequence_type `T1/T2/FLAIR`] [--name_pattern `<filename/pattern>`] [--overwrite True/False (default=False]
 ```
 * `T1/T2/FLAIR`: Type of sequence defined as input T1, T2, or FLAIR.
-* `<filename/pattern>`: Filter filename with specific pattern in the input directory.
+* `<filename/pattern>`: Filter the filenames with a specific pattern in the input directory.
 * `<overwrite>`: Allow to replace already existing processing output.
 
 
