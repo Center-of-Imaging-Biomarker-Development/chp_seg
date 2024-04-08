@@ -18,7 +18,9 @@ sudo docker run -v /absolute_path_to_folder/:/data/in  -v /absolute_path_to_fold
 See Installation instructions for detailed instructions on how to install all the dependencies.
 See How to use Chp_Seg for detailed instructions on how to use Chp_Seg.
 
-If you use this software please cite the [[associated publication]](https://fluidsbarrierscns.biomedcentral.com/articles/10.1186/s12987-024-00525-9): Eisma, Jarrod J., et al. "Deep learning segmentation of the choroid plexus from structural magnetic resonance imaging (MRI): validation and normative ranges across the adult lifespan." Fluids and Barriers of the CNS 21.1 (2024): 1-13.
+If you use this software please cite the [[associated publication]](https://fluidsbarrierscns.biomedcentral.com/articles/10.1186/s12987-024-00525-9)
+
+Eisma, Jarrod J., et al. "Deep learning segmentation of the choroid plexus from structural magnetic resonance imaging (MRI): validation and normative ranges across the adult lifespan." Fluids and Barriers of the CNS 21.1 (2024): 1-13.
 
 
 
