@@ -3,7 +3,12 @@
 Segmentation tool for the delineation and volumetric quantification of the choroid plexus
 
 ## Quick Start Instructions
-If you have already installed Docker, you can get the kilianhett/chp_seg:1.0.0 image from Docker Hub repository:
+If you have already installed Docker, you can get the kilianhett/chp_seg:1.0.1 image from Docker Hub repository:
+
+Update (07/2024) - version 1.0.1:
+ - Parcelation of right and left choroid plexus
+ - Volumetric report generation
+ - Minor bug fixe
 
 ```
 sudo docker pull kilianhett/chp_seg:1.0.1
