@@ -10,6 +10,8 @@ Update (07/2024) - version 1.0.1:
 ## Quick Start Instructions
 If you have already installed Docker, you can get the kilianhett/chp_seg:1.0.1 image from Docker Hub repository:
 
+### Docker
+
 ```
 sudo docker pull kilianhett/chp_seg:1.0.1
 ```
@@ -19,6 +21,19 @@ Choroid plexus segmentation software currently only supports CPU
 ```
 sudo docker run -v /absolute_path_to_folder/:/data/in  -v /absolute_path_to_folder/:/data/out kilianhett/chp_seg:1.0.1 --sequence_type T1 --name_pattern <name_of_image>
 ```
+
+### Apptainer
+
+```
+apptainer pull chp_seg.sif kilianhett/chp_seg:1.0.1
+```
+
+Choroid plexus segmentation software currently only supports CPU
+
+```
+sudo apptainer exec --bind /absolute_path_to_folder/:/data/in  --bind /absolute_path_to_folder/:/data/out --pwd /app chp_seg.sif ./serial_process --sequence_type T1 --name_pattern <name_of_image>
+```
+
 
 See Installation instructions for detailed instructions on how to install all the dependencies.
 See How to use Chp_Seg for detailed instructions on how to use Chp_Seg.
