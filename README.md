@@ -38,7 +38,7 @@ sudo apptainer exec --bind /absolute_path_to_folder/:/data/in  --bind /absolute_
 See Installation instructions for detailed instructions on how to install all the dependencies.
 See How to use Chp_Seg for detailed instructions on how to use Chp_Seg.
 
-### Citation
+## Citation
 
 If you use this software please cite the [[associated publication]](https://fluidsbarrierscns.biomedcentral.com/articles/10.1186/s12987-024-00525-9)
 
