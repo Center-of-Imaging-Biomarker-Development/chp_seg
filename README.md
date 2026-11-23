@@ -2,7 +2,13 @@
 
 Segmentation tool for the delineation and volumetric quantification of the choroid plexus
 
-Update (07/2024) - version 1.0.1:
+## Changelog
+
+### v1.0.2 (11/2026)
+- Fixed hemisphere labeling (left/right assignment)
+- Added generation of a QA report (PDF)
+
+### v1.0.1 (07/2024)
  - Parcellation of the right and left choroid plexus
  - Generation of volumetric reports
  - Minor bug fixes
