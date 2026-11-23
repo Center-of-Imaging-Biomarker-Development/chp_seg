@@ -14,24 +14,24 @@ Segmentation tool for the delineation and volumetric quantification of the choro
  - Minor bug fixes
 
 ## Quick Start Instructions
-If you have already installed Docker, you can get the kilianhett/chp_seg:1.0.1 image from Docker Hub repository:
+If you have already installed Docker, you can get the kilianhett/chp_seg:1.0.2 image from Docker Hub repository:
 
 ### Docker
 
 ```
-sudo docker pull kilianhett/chp_seg:1.0.1
+sudo docker pull kilianhett/chp_seg:1.0.2
 ```
 
 Choroid plexus segmentation software currently only supports CPU
 
 ```
-sudo docker run -v /absolute_path_to_folder/:/data/in  -v /absolute_path_to_folder/:/data/out kilianhett/chp_seg:1.0.1 --sequence_type T1 --name_pattern <name_of_image>
+sudo docker run -v /absolute_path_to_folder/:/data/in  -v /absolute_path_to_folder/:/data/out kilianhett/chp_seg:1.0.2 --sequence_type T1 --name_pattern <name_of_image>
 ```
 
 ### Apptainer
 
 ```
-apptainer pull chp_seg.sif kilianhett/chp_seg:1.0.1
+apptainer pull chp_seg.sif kilianhett/chp_seg:1.0.2
 ```
 
 Choroid plexus segmentation software currently only supports CPU
